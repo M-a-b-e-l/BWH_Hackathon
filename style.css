@@ -156,6 +156,12 @@ body::-webkit-scrollbar {
   border-radius: 5px;
 }
 
+#mapBox h4{
+  font-weight: none;
+  font-size: 20px;
+  color: #3b3b3b;
+}
+
 #mapImage {
   height: 80%;
   width: 80%;
@@ -197,7 +203,6 @@ svg path:hover {
   padding: 10px;
   background-color: rgba(163, 56, 95, 0.5);
   text-align: center;
-  height: 1705px;
   display: flex;
   flex-direction: column;
 }
@@ -272,6 +277,7 @@ li {
   box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.1);
   justify-content: space-evenly;
   border: 1px solid black;
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
 .table-data, .header__item {
@@ -283,6 +289,15 @@ li {
   text-transform:uppercase;
 }
 
+#Donation_Form h3{
+  font-family: 'Protest Guerrilla', sans-serif;
+  font-size: 25px;
+}
+
+#Donation_Form h2{
+  font-size: 20px;
+  color: #3b3b3b;
+}
 
 /* -------------------- Petition page -------------------------*/
 #Petition {
@@ -359,7 +374,7 @@ li {
   display:flex;
   flex-direction: column;
   align-items: center;
-
+  justify-content: space-between;
 }
 
 .card h2{
@@ -502,6 +517,10 @@ li {
   margin: 0; 
   padding: 0;
   background-color: #3b1625;
+  height: 20vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
 
 .outer-footer{
