@@ -263,12 +263,12 @@
 
 
   
-  
   <div id="Petition">
   <h1>Sign the Petition for the Animal Compassion Act <br></h1>
       <!-- Animal photo -->
     <div id="AnimalPhotos">
       <img src = "https://img.freepik.com/free-photo/portrait-beautiful-brown-white-domestic-australian-shepherd-dog-posing-nature-sunset_181624-59364.jpg?size=626&ext=jpg&ga=GA1.1.1775321104.1707002682&semt=ais", alt = "Dog Photo">
+      
       <img src = "https://img.freepik.com/free-photo/closeup-shot-adorable-kitten-sitting-colorful-stones_181624-40932.jpg?size=626&ext=jpg&ga=GA1.2.1775321104.1707002682&semt=ais", alt = "Cat Photo">
     </div>
     
@@ -296,13 +296,12 @@
 
       </div> <!-- Closing div for PetitionLinks -->
       
-<!-- List the links for petitions    
+<!-- List the links for petitions -->
       
-  
     </div> <!-- End of petition text div -->
   </div> <!-- End of Petition id div -->
-  </div> <!-- end div for petition form --> 
-
+</div> <!-- end div for petition form -->
+  
 
   <!-- Making Forms for Donation/ Animal Compassion Act-->
     <div id="Donation_Form">
@@ -498,6 +497,7 @@
   CBho7kEWq9cARiPLGY9EfTvQl9BjJ3jyR9zA8e86oR3GeYbSC6 
 
   API secret 
+  5gf9l8zUGhuf0ZE6oHegwWYIU9kAwjvZKMHSrCso
   
   --> 
   <div id="FosteringCards">
@@ -506,9 +506,7 @@
       <img
         src="https://img.freepik.com/free-photo/australian-shepherd-aussie_155003-9715.jpg?size=626&ext=jpg&ga=GA1.2.1775321104.1707002682&semt=sph"
         , alt="dog">
-      <label for="zip" class="zipLabel">Zip Code:</label>
-      <input type="text" name="zip" id="zip">
-      <input type="submit" id="submitZip">
+  <a href="https://www.operationkindness.org/available-foster-pets/" class="fosterLink">Click to Foster Dog</a>
     </div>
 
 
@@ -518,9 +516,8 @@
       <img
         src="https://img.freepik.com/free-photo/close-up-cute-cat-indoors_23-2148882585.jpg?size=626&ext=jpg&ga=GA1.2.1775321104.1707002682&semt=sph"
         , alt="cat">
-      <label for="zip" class="zipLabel">Zip Code: </label>
-      <input type="text" name="zip" id="zip">
-      <input type="submit" id="submitZip">
+      <a href="https://www.operationkindness.org/available-foster-pets/" class="fosterLink">Click to Foster Cat</a>
+
     </div>
 
 
@@ -529,7 +526,7 @@
       <img
         src="https://img.freepik.com/free-photo/elderly-person-spendng-tim-with-their-pets_23-2149486359.jpg?size=626&ext=jpg&ga=GA1.2.1775321104.1707002682&semt=ais"
         , alt="volunteer at dog shelter">
-      <button type="button" class="button"></button>
+      <a href="https://volunteers-ahs.talentlms.com/"  class="fosterLink">Click to Volunteer</a>
     </div>
 
   </div> <!-- Closing div for FosteringCards-->
@@ -538,33 +535,44 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src='script.js'></script>
 
-
+<!-- Footer Code Below -->
   <footer class="footer">
     <div class="inner-footer">
       <div class="footer-names">
-        <ul>
-          <li class="quick-items"><a href ="#"><h2>Mabel I.M.</h2></a></li>
-          <li class="quick-items"><a href ="#"><h2>Stephanie K.</h2></a></li>
-          <li class="quick-items"><a href ="#"><h2>Heather M.</h2></a></li>
-          <li class="quick-items"><a href ="#"><h2>Catherine D.</h2></a></li>
-        </ul>
-      </div> <!-- Closing div for footer-names -->
-    
-      <div class="social-links">
-        <ul>
-          <li class="social-items"><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-          <li class="social-items"><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-          <li class="social-items"><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-          <li class="social-items"><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-          </ul>
-      </div> <!-- Closing div for social-links -->
+        <div class="social-person" id="MabelSocial">
+          <h2>Mabel I.M.</h2>
+          <a href="https://www.linkedin.com/in/mabel-i-m-/" target="_blank">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf_KBK_0_rRw9zkazLgksl6dNMasmTiN6SqA&usqp=CAU" alt="Mabel's LinkedIn">
+          </a>
+        </div>
+
+        <div class="social-person" id="StephanieSocial">
+          <h2>Stephanie K.</h2>
+          <a href="https://www.linkedin.com/in/stephkoester/" target="_blank">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf_KBK_0_rRw9zkazLgksl6dNMasmTiN6SqA&usqp=CAU" alt="Stephanie's LinkedIn">
+          </a>
+        </div>
+
+        <div class="social-person" id="HeatherSocial">
+          <h2>Heather M.</h2>
+          <a href="https://www.linkedin.com/in/heather-macias/" target="_blank">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf_KBK_0_rRw9zkazLgksl6dNMasmTiN6SqA&usqp=CAU" alt="Heather's LinkedIn">
+          </a>
+        </div>
+
+        <div class="social-person" id="CatherineSocial">
+          <h2>Catherine D.</h2>
+          <a href="https://www.linkedin.com/in/ccatherinedo/" target="_blank">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf_KBK_0_rRw9zkazLgksl6dNMasmTiN6SqA&usqp=CAU" alt="Catherine's LinkedIn" class="linkedInImg">
+          </a>
+        </div>
+      </div> <!-- end of div for footer-names -->
     </div> <!-- end of div for inner-footer -->
 
-    
     <div class="outer-footer">
       Copyright &copy; 2023 Mabel I.M., Stephanie K., Heather M.,Catherine D
     </div> <!-- end of div for outer-footer -->
-  </footer>
+  </footer> <!-- End of footer tag -->
 
 
 </body>

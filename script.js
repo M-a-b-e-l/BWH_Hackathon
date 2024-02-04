@@ -69,28 +69,6 @@ const catsEuthanized = document.getElementById('catsEuthanized');
 const dogsEuthanized = document.getElementById('dogsEuthanized');
 
 
-/* Code to have submit button working 
- * for some reason interferes with the data displayed 
-
-document.addEventListener('DOMContentLoaded', submitButton {
-});
-
- * function for submit button when clicked 
-
-function submitButton(){
- document.getElementById('submitZip').addEventListner('click', function(event){
- event.preventDefault();
-  const zip = document.getElementById('zip').value; // get zip from html 
-  const url = 'url for petfinder '
-
-  
-
-  }
-  */
-
-
-
-
 
 // method to select all svg paths & choose which data to display
 document.querySelectorAll('svg path').forEach(state => {
