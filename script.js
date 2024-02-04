@@ -76,7 +76,7 @@ document.addEventListner('DOMContentLoaded', bindButtons);
 function bindButtons(){
   document.getElementById('submitZip').addEveventListener('click',function(event){
     event.preventDefault();
-    const zip = document.getElementById('zip').value; // 
+    const zip = document.getElementById('zip').value; // gets zipcode from form entry 
     const url = 
 
 // method to select all svg paths & choose which data to display
