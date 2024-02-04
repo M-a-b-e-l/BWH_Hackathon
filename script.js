@@ -68,16 +68,29 @@ const statePopup = document.getElementById('statePopup');
 const catsEuthanized = document.getElementById('catsEuthanized');
 const dogsEuthanized = document.getElementById('dogsEuthanized');
 
-//document to add function for button in html , makes sure HTML doc is loaded before being able to execute button func
-document.addEventListner('DOMContentLoaded', bindButtons); 
+
+/* Code to have submit button working 
+ * for some reason interferes with the data displayed 
+
+document.addEventListener('DOMContentLoaded', submitButton {
+});
+
+ * function for submit button when clicked 
+
+function submitButton(){
+ document.getElementById('submitZip').addEventListner('click', function(event){
+ event.preventDefault();
+  const zip = document.getElementById('zip').value; // get zip from html 
+  const url = 'url for petfinder '
+
+  
+
+  }
+  */
 
 
-// function to bind buttons
-function bindButtons(){
-  document.getElementById('submitZip').addEveventListener('click',function(event){
-    event.preventDefault();
-    const zip = document.getElementById('zip').value; // gets zipcode from form entry 
-    const url = 
+
+
 
 // method to select all svg paths & choose which data to display
 document.querySelectorAll('svg path').forEach(state => {
@@ -109,6 +122,3 @@ document.querySelectorAll('svg path').forEach(state => {
 //Want to delete this - need team discussion(relating to this & html)
  //  stateName.textContent = state.getAttribute('data-name');
  // stateData.textContent = 'Cats Euthanized: ${stateEuthanizedData.catsEuthanized}'; 
-
-
-

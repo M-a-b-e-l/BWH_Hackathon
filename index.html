@@ -283,14 +283,25 @@
       <li>45% of sheltered cats are eventually euthanized, with feral cats leaping up the statistics to nearly 100%.</li>
       <li> 93% of pitbulls in shelters are euthanized because of the harmful negative stereotype associated with the breed.</li>
   
-    
     </ul>
     
-    <h3> Listed below are some petitions you can sign</h3>
+    <h3> Listed below are some petitions you can sign</h3> <br>
+
+      <div id = "PetitionLinks">
+      <a href="https://theanimalrescuesite.greatergood.com/clicktogive/ars/petition/convenience-euthanasia-ars" target="_blank" rel="noopener noreferrer">Save Adoptable Pets from Unnecessary Euthansia</a> <br>
+
+      <a href="https://www.change.org/p/make-all-shelters-in-usa-to-be-no-kill-shelters" target="_blank" rel="noopener noreferrer">Make All Shelters in USA to be "NO KILL SHELTERS"</a> <br>
+
+     <a href="https://www.change.org/p/stop-dog-breeder-and-stud-service-postings-on-craigslist" target="_blank" rel="noopener noreferrer">Stop Dog Breeder and Stud Service Postings on Craiglist</a>
+
+      </div> <!-- Closing div for PetitionLinks -->
       
+<!-- List the links for petitions    
+      
+  
     </div> <!-- End of petition text div -->
   </div> <!-- End of Petition id div -->
-    
+  </div> <!-- end div for petition form --> 
 
 
   <!-- Making Forms for Donation/ Animal Compassion Act-->
@@ -298,9 +309,10 @@
       <h1> Donate Today to Save Lives! </h1>
       <h2 style="font-weight: normal;">Places You Can Donate<br></h2>
 
+      <div id = "4DonationStates">
       <!--------- Arizona ---------->
       <!-- <div id = "DonationTableRows"> -->
-        <div id = "ArizonaDonationDiv">
+    <div id = "ArizonaDonationDiv">
           <h3>In Arizona</h3>
         <div class="container">
         <div class="table" id="tb1">
@@ -333,7 +345,6 @@
         </div>
       </div> 
     </div>
-    </div> <!-- This should not be there -->
 
     <!--------- California ---------->
     <div id = "CaliforniaDonationDiv">
@@ -367,9 +378,7 @@
     </div>
     
   
-
     <!--------- New York ---------->
-  <div id = "TexasNYBackground">
     <div id = NYDonationDiv>
     <h3>In New York</h3>
       <div class="container">
@@ -383,7 +392,7 @@
           <div class="table-content">	
             <div class="table-row">		
               <div class="table-data">Bideawee</div>
-              <div class="table-data"><a href="https://www.bideawee.org/" rel="noopener noreferrer">Website</a></div>
+              <div class="table-data"><a href="https://www.bideawee.org/" target="_blank" rel="noopener noreferrer">Website</a></div>
             </div>
 
             <div class="table-row">
@@ -439,11 +448,48 @@
         </div>
       </div>
     </div>
-  </div>
-</div>
+
+        <!--------- National ---------->
+        <div id = "NationalDonationDiv">
+        <h3>Nationwide</h3>
+          <div class="container">
+            <div class="table" id="tb2">
+              <div class="table-header">
+                <div class="header__item"><a id="name" class="filter__link">Organization</a></div>
+                <div class="header__item"><a id="draws" class="filter__link filter__link--number">Link</a></div>
+              </div>
+              <div class="table-content">	
+                <div class="table-row">		
+                  <div class="table-data">Best Friends Animal Society</div>
+                  <div class="table-data"><a href="https://bestfriends.org/" target="_blank" rel="noopener noreferrer">Website</a></div>
+                </div>
+                <div class="table-row">
+                  <div class="table-data">North Shore Animal League America</div>
+                  <div class="table-data"><a href="https://www.animalleague.org/" target="_blank" rel="noopener noreferrer">Website</a></div>
+                </div>
+                <div class="table-row">
+                  <div class="table-data">The Humane Society of the United States</div>
+                  <div class="table-data"><a href="https://www.humanesociety.org/" target="_blank" rel="noopener noreferrer">Website</a></div>
+                </div>
+                <div class="table-row">
+                  <div class="table-data">No Kill Advocacy Center</div>
+                  <div class="table-data"><a href="https://nokilladvocacycenter.org/" target="_blank" rel="noopener noreferrer">Website</a></div>
+                </div>
+              </div>	
+            </div>
+          </div>
+        </div>
+
+        
+      </div> <!-- End of 4DonationStates div -->
+     
+    </div> <!-- End div for Donation Form-->
+
+  
+</div> <!-- Div for break -->
   <br>
   <br>
-  </div>
+</div> <!-- End div for break -->
   
 
   <!-- Below is the code or the 3 cards abt fostering/volunteering -->
@@ -452,14 +498,17 @@
   CBho7kEWq9cARiPLGY9EfTvQl9BjJ3jyR9zA8e86oR3GeYbSC6 
 
   API secret 
-  -->
+  
+  --> 
   <div id="FosteringCards">
     <div class="card"> <!-- Card 1-->
       <h2>Foster a dog near you!</h2>
       <img
         src="https://img.freepik.com/free-photo/australian-shepherd-aussie_155003-9715.jpg?size=626&ext=jpg&ga=GA1.2.1775321104.1707002682&semt=sph"
         , alt="dog">
-      <button type="button" class="button"></button>
+      <label for="zip" class="zipLabel">Zip Code:</label>
+      <input type="text" name="zip" id="zip">
+      <input type="submit" id="submitZip">
     </div>
 
 
@@ -469,7 +518,9 @@
       <img
         src="https://img.freepik.com/free-photo/close-up-cute-cat-indoors_23-2148882585.jpg?size=626&ext=jpg&ga=GA1.2.1775321104.1707002682&semt=sph"
         , alt="cat">
-      <button type="button" class="button"></button>
+      <label for="zip" class="zipLabel">Zip Code: </label>
+      <input type="text" name="zip" id="zip">
+      <input type="submit" id="submitZip">
     </div>
 
 
@@ -486,6 +537,67 @@
 <!--script for API library-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src='script.js'></script>
+
+
+  <footer class="footer">
+    <div class="inner-footer">
+      <div class="footer-names">
+        <ul>
+          <li class="quick-items"><a href ="#"><h2>Mabel I.M.</h2></a></li>
+          <li class="quick-items"><a href ="#"><h2>Stephanie K.</h2></a></li>
+          <li class="quick-items"><a href ="#"><h2>Heather M.</h2></a></li>
+          <li class="quick-items"><a href ="#"><h2>Catherine D.</h2></a></li>
+        </ul>
+      </div> <!-- Closing div for footer-names -->
+    
+      <div class="social-links">
+        <ul>
+          <li class="social-items"><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+          <li class="social-items"><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+          <li class="social-items"><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+          <li class="social-items"><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+          </ul>
+      </div> <!-- Closing div for social-links -->
+    </div> <!-- end of div for inner-footer -->
+
+    
+    <div class="outer-footer">
+      Copyright &copy; 2023 Mabel I.M., Stephanie K., Heather M.,Catherine D
+    </div> <!-- end of div for outer-footer -->
+  </footer>
+
+
 </body>
 
+  
+
+  <!-- comment what Mabel had for footer originally
+  <footer class="footer">
+    <div class="inner-footer">
+      <div class="footer-names">
+        <ul>
+          <li class="quick-items"><a href ="#"><h2>Mabel I.M.</h2></a></li>
+          <li class="quick-items"><a href ="#"><h2>Stephanie K.</h2></a></li>
+          <li class="quick-items"><a href ="#"><h2>Heather M.</h2></a></li>
+          <li class="quick-items"><a href ="#"><h2>Catherine D.</h2></a></li>
+        </ul>
+      </div> <!-- Closing div for footer-names -->
+
+     <!-- <div class="social-links">
+        <ul>
+          <li class="social-items"><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+          <li class="social-items"><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+          <li class="social-items"><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+          <li class="social-items"><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+          </ul>
+      </div> <!-- Closing div for social-links -->
+    <!-- </div>
+
+
+    <div class="outer-footer">
+      <p>Copyright &copy; 2023 Mabel I.M., Stephanie K., Heather M.,Catherine D</p>
+    </div>
+  </footer>
+
+  <!-- --> 
 </html>
